@@ -15,4 +15,5 @@ public class Skill : ScriptableObject
     public string SkillName => skillName;
     private string Description => description;
     private int Cost => cost;
+    public List<Skill> prerequisites => preRequisites;
 }
