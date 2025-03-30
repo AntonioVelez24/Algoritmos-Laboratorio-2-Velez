@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c785256f61c4af4eb7a289576c08a1b, type: 3}
+  m_Name: Mortal Arrow
+  m_EditorClassIdentifier: 
+  skillName: Flecha Mortal
+  description: Disparas una flecha que elimina a cualquier enemigo
+  cost: 15
+  preRequisites:
+  - {fileID: 11400000, guid: 225c99cb975d8ff4fb25d62c80bc0526, type: 2}
+  unlockeables: []

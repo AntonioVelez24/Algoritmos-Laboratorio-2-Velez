@@ -7,4 +7,16 @@ using UnityEngine;
 public class SkillResources : ScriptableObject
 {
     [SerializeField] List<Skill> skills = new List<Skill>();
+    public List<string> GetSkillNames()
+    {
+        List<string> names = new List<string>();
+        foreach (Skill skill in skills)
+        {
+            if (skill != null)
+            {
+                names.Add(skill.SkillName);
+            }
+        }
+        return names;
+    }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Skills", order = 1)] 
+[CreateAssetMenu(menuName = "ScriptableObjects/Skill", order = 1)] 
 
 public class Skill : ScriptableObject
 {
@@ -10,10 +10,12 @@ public class Skill : ScriptableObject
     [SerializeField] private string description;
     [SerializeField] private int cost;
 
-    private List<Skill> preRequisites = new List<Skill>();
+    [SerializeField] private List<Skill> preRequisites = new List<Skill>();
+    [SerializeField] private List<Skill> unlockeables = new List<Skill>();
 
     public string SkillName => skillName;
-    private string Description => description;
-    private int Cost => cost;
+    public string Description => description;
+    public int Cost => cost;
     public List<Skill> prerequisites => preRequisites;
+    public List<Skill> Unlockables => unlockeables;
 }

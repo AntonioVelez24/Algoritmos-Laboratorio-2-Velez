@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using static Anthonycrimson.GameUtils;
 
@@ -13,7 +14,7 @@ public class SkillManager : MonoBehaviour
             return;
         }
         print("Se necesita: ");
-        for (int i = 0; i <= skill.prerequisites.Count; ++i) 
+        for (int i = 0; i < skill.prerequisites.Count; ++i) 
         {
             SearchPrerequisites(skill.prerequisites[i]);
         }

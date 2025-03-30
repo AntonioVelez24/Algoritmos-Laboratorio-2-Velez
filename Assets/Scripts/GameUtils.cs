@@ -7,7 +7,7 @@ namespace Anthonycrimson
 {
     public static class GameUtils
     {
-        public static void ApplyAll<T>(List<T> list, Action<T> action)
+        public static void ApplyToAll<T>(List<T> list, Action<T> action)
         {
             if (list == null) return;
             foreach (var item in list)
